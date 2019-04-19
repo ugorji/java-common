@@ -1,0 +1,21 @@
+<#if (wrev.size > 0) >
+<table border="1">
+<#list 0..(wrev.size-1) as i >
+<tr>
+<td>
+${lines}: <i>${wrev.getChangeSummary(i)}</i>
+</td>
+</tr>
+<tr>
+<td bgcolor="#FF9933">
+${StringUtils.toHTMLEscape(wrev.getOriginal(i, null, "- ", "\n"), true, false)}
+</td>
+</tr>
+<tr>
+<td bgcolor="#99FF99">
+${StringUtils.toHTMLEscape(wrev.getRevised(i, null, "+ ", "\n"), true, false)}
+</td>
+</tr>
+</#list>
+</table>
+</#if>

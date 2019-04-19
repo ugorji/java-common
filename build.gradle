@@ -1,0 +1,30 @@
+plugins {
+    id 'java-library'
+}
+
+repositories {
+    mavenCentral()
+    jcenter()
+}
+
+dependencies {
+    implementation 'javax.mail:mail:1.4.1',
+        // ... ... from mavenCentral
+        //'org.apache.lucene:lucene-core:8.0.0',
+        'org.apache.lucene:lucene-core:2.9.4',
+        'javax.jms:javax.jms-api:2.0.1',
+        'commons-logging:commons-logging:1.2',
+        'org.freemarker:freemarker:2.3.28',
+        //'org.apache.bsf:bsf-all:3.0-beta3',
+        //'org.apache.bsf:bsf-engines:3.0-beta3',
+        //'org.apache.bsf:bsf-api:3.1',
+        //'org.apache.bsf:parent:3.1',
+        //'org.apache.bsf:bsf-utils:3.1',
+        'org.jvnet.hudson:org.suigeneris.jrcs.diff:0.4.2',
+        'net.sf.ehcache:ehcache:2.10.6',
+        //'com.jhlabs:javaproj:1.0',
+        //'com.jhlabs:filters:2.0.235-1',
+        // ... ... from jcenter
+        'org.apache.bsf:com.springsource.org.apache.bsf:2.4.0', 
+        'com.jhlabs:imaging:01012005'
+}
