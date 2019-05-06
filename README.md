@@ -8,14 +8,18 @@ It also contains some shared classes for managing users and groups in a generic 
 
 ## Dependencies
 
-This is typically used within a multi-project `gradle` build.
-However, this package doesn't depend on any others.
+This repository is part of a multi-project `gradle` build.
 
-It is used by my java-markup, java-facade and java-web packages, 
-and whatever other modules depend on them.
+It has no dependencies.
+
+Before building:
+
+- download [`settings.gradle`](https://gist.githubusercontent.com/ugorji/2a338462e63680d117016793989847fa/raw/settings.gradle) into the parent folder
 
 ## Building
 
 ```sh
-gradle clean build
+gradle clean
+gradle build
 ```
+
